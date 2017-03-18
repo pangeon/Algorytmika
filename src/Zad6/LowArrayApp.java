@@ -1,8 +1,27 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+W array.java użyliśmy tablicy jako struktury do przechowania danych. 
+Teraz umieścimy ją w klasie o nazwie LowArray. Stworzymy też metody 
+przy pomocy których obiekty innych klas (tu: klasy LowArrayApp) 
+mogą uzyskać dostęp to tej tablicy.
+W lowArray.java, zapakowaliśmy tablicę. Tablica jest chroniona wewnątrz klasy,  
+jest prywatna więc tylko metody klasy LowArray mają do niej dostęp. Są tu trzy metody:
+setElem(), getElem() - dodawanie i odczytywanie elementu tablicy, oraz konstruktor, 
+który tworzy pustą tablicę o określonym rozmiarze.
+Inna klasa, LowArrayApp, tworzy obiekt typu LowArray 
+i używa go do przechowywania i manipulowania danymi. 
+Możemy myśleć o LowArray jako o narzędziu a LowArrayApp jest jego użytkownikiem. 
+Podzieliliśmy zatem program na dwie klasy z jasno zdefiniowanymi rolami. 
+Sposób w jaki klasy współpracują ze sobą określa się jako interfejs. 
+Ponieważ pola w klasach są w typowym przypadku prywatne, gdy mówimy o interfejsie 
+zazwyczaj mamy na myśli metody: co robią i jakie sa ich argumenty. 
+Przez wywołanie tych metod użytkownik oddziaływuje na obiekty klasy. 
+Interfejs do klasy LowArray w lowArray.java nie jest zbyt wygodny. 
+Metody setElem()i getElem() działają jak operator [] w zwykłej tablicy. 
+Użytkownik klasy reprezentowany przez metodę main() w klasie LowArrayApp 
+działa na tak samo niskim poziomie jak w pierwotnej wersji programu - array.java. 
+Jedyna różnica to taka, że odwołuje się do setElem() i getElem() zamiast do operatora []. 
+Nie jest do końca jasne co to usprawnia? 
+*/
 package Zad6;
     
 class LowArrayApp {
