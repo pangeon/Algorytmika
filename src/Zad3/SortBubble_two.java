@@ -18,6 +18,7 @@ class SortBubble_two{
         int i = 0;
         int j = 0;
         int k = 0;
+        int l = 0;
         int pom = 0;
 
         //generuje wektor
@@ -34,25 +35,38 @@ class SortBubble_two{
         //sortowanie
         System.out.println("Początek sortowania...");
         double a = System.currentTimeMillis();
-        for (i=1;i<ilw;i++){ 
-            System.out.print(wek[i]+" ");
-            for (j=ilw-1;j>=i;j--) {
-                System.out.print(j+" ");
-                if (j == ilw-1) {
-                    System.out.println("");
+        for (i=1;i<ilw;i++){ //i=0; i<(maks.15); 1++
+            //przy każdym obrocie pętli a, gdzie wartości i wrastają wykonuj
+            //(ilw-1) obrótów pętli b, gdzie wartości j maleją
+            //i wzrasta tym samym j maleje np=(i=5 więc: j=14; 14>=5; 14--)
+            //między 14 a 5 jest 9 liczb
+            //j maleje do coraz większej granicy gdy i=15 pętla b zatrzymuje się
+            //zmniejsza się ilość obrotów pętli b
+            System.out.println(" i= "+i+" ");
+            for (j=ilw-1;j>=i;j--) { //j=14; j>=(maks.14); 14--
+                System.out.print(" j= "+j+" ");
+                //jeżeli wartość jednej ze sładowych wektora, poprzedającej
+                //następną po niej składową wektora jest większa.
+                if (wek[j-1]>wek[j]){   //np. j=4; wek[3]>wek[4] | 12>6
+                    pom = wek[j-1];     //np. pom = wek[3] | pom=12
+                    wek[j-1] = wek[j];  //np. wek[3] = wek[4] | [3]6 zamiast [3]12
+                    wek[j] = pom;       //np. wek[4] = pom czyli wek[4] = wek[3] | [4]12 zamiast [4]6
+                    k++;                //licze obroty pętli z wystąpieniem warunku       
+                    /*
+                    wniosek:
+                    zamieniamy wartości miejscami przypisujemy jedną z podmienienianych wartości
+                    do zmiennej pomocniczej by jej nie "zgubić". Wykonywane jest coraz mniej porównań.
+                    */   
                 }
-                if (wek[j-1]>wek[j]){
-                    pom = wek[j-1];
-                    wek[j-1] = wek[j];
-                    wek[j] = pom;
-                    k++;
-                }
-            } 
+            }
+            l++; //ilość obrotów pętli nie zmienia się
+            
         }
         System.out.println("");
-        System.out.println("ilość przesortowań: " + k);
+        System.out.println("ilość przesortowań jednostkowych: " + k);
+        System.out.println("ilość przesortowań całościowych: " + l);
         double b = System.currentTimeMillis();
-        System.out.println("Czas sortowania: " + (b - a));
+        System.out.println("Czas wykonania instrukcji: " + (b - a));
         System.out.println("Koniec sortowania...");
         
         //wypisuje posortowany wektor
@@ -60,5 +74,5 @@ class SortBubble_two{
         for (i=0;i<ilw;i++) {
             System.out.print(" [" + i + "] = " + wek[i]+ " | ");
         }
-    }	
+    } //nie umiem wypisać kolejnych etapów sortowania wektora	
 }

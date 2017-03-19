@@ -16,7 +16,8 @@ class SortBubble_one{
         int dl_vector = 15;
         int[] wek = new int[dl_vector];
         int i = 0;
-        int j = 0; //określa sumę przesortowań
+        int j = 0; //określa sumę przesortowań jednostkowych - zamian
+        int k = 0; //określa sumę przesortowań całościowych - wykonań obrotów pętli
         int pom = 0;
         boolean flaga = true;
         int test = 0;
@@ -49,14 +50,18 @@ class SortBubble_one{
                     wek[i] = wek[i-1];
                     wek[i-1] = pom;
                     flaga=true;
+                    j++;    //suma przeortowań jednostkowych - inkrementacja przy każdym obrocie pętli
+                            //i spełnieniu warunku
                 }
             }
-            j++; //suma przeortowań - inkrementacja przy każdym obrocie pętli
+            k++; //suma przeortowań całościowych - inkrementacja przy każdym obrocie pętli
+                 //ilość obrotów pętli zmienia się
         }
         while (flaga);
-        System.out.println("ilość przesortowań: " + j);
+        System.out.println("ilość przesortowań jednostkowych: " + j);
+        System.out.println("ilość przesortowań całościowych: " + k);
         double b = System.currentTimeMillis();
-        System.out.println("Czas sortowania: " + (b - a));
+        System.out.println("Czas wykonania instrukcji: " + (b - a));
         System.out.println("Koniec sortowania...");
 
         //wypisuje posortowany wektor
