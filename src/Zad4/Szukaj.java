@@ -18,31 +18,41 @@ package Zad4;
 class Szukaj{
 
     public static void main (String Args[]) {
-    int ilw = 20;
-    int[] wek = {4,7,9,12,13,14,17,45,57,89,0,0,0,0,0};
-    int i;
-    int liczba_szukana=19; //liczba szukana lub nowy element
-    boolean znaleziono = false;
+        //int ilw = 20; ???
+        int[] wek = {4,7,9,12,13,14,17,45,57,89,0,0,0,0,0};
+        int i = 0;
+        int pom = 0;
+        int liczba_szukana = 9; //liczba szukana lub nowy element
+        boolean znaleziono = false;
 
-    //wypisuje wektor
-    System.out.println("Oto wektor: ");
-    for (i=0;i<ilw;i++)
-        System.out.print(wek[i]+ "  ");
-    System.out.println();
+        //wypisuje wektor
+        System.out.println("Oto wektor: ");
+        for (i=0;i<wek.length;i++) {
+            System.out.print(wek[i]+ "  ");
+        }
+        System.out.println();
 
-    //szukanie
-    i=0; znaleziono=false;
-    while ((i<ilw) && !znaleziono) {
+        //szukanie
+        i=0;
+        znaleziono=false;
+        while ((i<wek.length) && !znaleziono) {
             if (wek[i]==liczba_szukana) {
-                    System.out.println("Szukana liczba " + liczba_szukana);
-                    System.out.println("występuje na pozycji " +(i+1));
-                    znaleziono=true;
+                System.out.println("Szukana liczba " + liczba_szukana);
+                System.out.println("występuje na pozycji " +(i+1));
+                znaleziono=true;
+                pom = i+1;
+            } else {  
+              i++;
             }
-            else  i++;
-    }
+        }
+        if(wek[pom] < wek[pom+1]) {
+            System.out.println("Warunek spełniony");
+            System.out.println(wek[pom] + "<" + wek[pom+1]);
+        }
+        
 
-    if (!znaleziono)
-            System.out.println("Nie znaleziono w wektorze liczby " +liczba_szukana );
-
+        if (!znaleziono) {
+            System.out.println("Nie znaleziono w wektorze liczby " +liczba_szukana);
+        }
     }	
 }
