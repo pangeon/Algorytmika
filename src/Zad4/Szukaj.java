@@ -23,6 +23,7 @@ class Szukaj{
         int i = 0;
         int pom = 0;
         int liczba_szukana = 9; //liczba szukana lub nowy element
+        int liczba_wstawiana = 11;
         boolean znaleziono = false;
 
         //wypisuje wektor
@@ -48,6 +49,21 @@ class Szukaj{
         if(wek[pom] < wek[pom+1]) {
             System.out.println("Warunek spełniony");
             System.out.println(wek[pom] + "<" + wek[pom+1]);
+        }
+        for (int j = 0; j < wek.length; j++) {
+            if(wek[j] >= liczba_wstawiana){
+                //System.out.print(j+" ");
+                if(wek[wek.length-1] == 0) {
+                    wek[j] = wek[j+1];
+                } else {
+                    break;
+                }
+//                if(wek[j+1] <= liczba_wstawiana) {
+//
+//                }
+                System.out.print(wek[j]+" "+" |"+j+"| ");
+            }
+            //System.out.print(wek[j]+" ");
         }
         
 
