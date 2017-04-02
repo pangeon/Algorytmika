@@ -45,21 +45,47 @@ class OrdArray {
         }
     } // end find()
     public void insert(double value) { // put element into array
-        int j;
+        System.out.println("Dodaje do tablicy: " + value);
+        /*fukcja porządkuje/sotuje dane
+        tablica jest ZAWSZE POSORTOWANA BO DODAJEMY DO POSORTOWANEJ TABLICY
+        */
+        
+        //wchodzę do pętli nElems zostało z zera zw. o 1 czyli teraz jest 1
+        int j; // j = 0; wart pomocnicza, musi być zainicjowana wcześniej,
+               // bo jest użyta w twóch pętlach
         for(j=0; j<nElems; j++) { // find where it goes
-            if(a[j] > value) { // (linear search)
+            // j=0; j<1; j++ - jeden obrót pętli
+            if(a[j] > value) { // (linear search) // liczba dodawana do tablicy
+                // jest porównywana z każdym indexem, jeśli jest mniejsza od któregoś,
+                // pętla zostaje przerwana
+                // jeśli warunek jest spełniony to znaczy że dodawana liczba nie jest
+                // największa, j zatrzyma się przy liczbie mniejszej od dodawanej.
+                // LICZBY SĄ POSORTOWANE, więc jasnym będzie gdzie wstawić liczbę
+                // a[0], czyli 77, a[1] czyli 99 są równe value, a więc nie są mniejsze
+                // pętla nie zostaje przerwana (?);
+                System.out.println("Niewłaściwa kolejność zostanie skorygowana !");
                 break;
             }
         }
+        //wchodzę do pętli k=1 bo nElems = 1; (k to 1) > 0; k schodzi w dół 1 razy
         for(int k=nElems; k>j; k--) { // move higher ones up
-            a[k] = a[k-1];
-            for(int m=0; m<20; m++) { // for each element,
-                System.out.print(a[m] + " "); // display it
-            }
-            System.out.println();
+            //(a[k] to wartość a[1] czyli 99) - zostaje przypisane do a[k-1] czyli a[0]
+            // czyli wartość 77
+            a[k] = a[k-1]; // zamiast 99 liczba 77 przypisana do indexu o jeden dalej
+                           // co z poprzednim indexem ?
+            // nie rozumiem po co ten blok (?)
+//            System.out.println("etapy wykonania metody:");
+//            for(int m=0; m<20; m++) { // for each element,
+//                System.out.print(a[m] + " "); // display it
+//            }
+//            System.out.println();
         }
-        a[j] = value; // insert it
+        a[j] = value; // insert it a[0] = 77;
         nElems++; // increment size
+        for (j = 0; j < nElems; j++) {
+            System.out.print("[" + j + "] " + a[j] + " | ");
+        }
+        
     } // end insert()
     public boolean delete(double value) {
         int j = find(value);

@@ -12,25 +12,25 @@ class OrderedApp {
         arr.insert(44);
         arr.insert(55);
         arr.insert(22);
-        //System.out.println("rozmiar w srodku " + arr.size());
-        arr.insert(88);
-        arr.insert(11);
-        arr.insert(00);
-        arr.insert(66);
-        arr.insert(33);
-        //System.out.println("rozmiar " + arr.size());
-        int searchKey = 55; // search for item
-        if(arr.find(searchKey) != arr.size()) {
-            System.out.println("Found " + searchKey);
-        }
-        else {
-            System.out.println("Can't find " + searchKey);
-        }
-        arr.display(); // display items
-        arr.delete(00); // delete 3 items
-        arr.delete(55);
-        arr.delete(99);
-        arr.display(); // display items again
+//        //System.out.println("rozmiar w srodku " + arr.size());
+//        arr.insert(88);
+//        arr.insert(11);
+//        arr.insert(00);
+//        arr.insert(66);
+//        arr.insert(33);
+        System.out.println("Parametr nie związany z wykonaniem funkcji insert - rozmiar: " + arr.size());
+//        int searchKey = 55; // search for item
+//        if(arr.find(searchKey) != arr.size()) {
+//            System.out.println("Found " + searchKey);
+//        }
+//        else {
+//            System.out.println("Can't find " + searchKey);
+//        }
+//        arr.display(); // display items
+//        arr.delete(00); // delete 3 items
+//        arr.delete(55);
+//        arr.delete(99);
+//        arr.display(); // display items again
     } // end main()
 } // end class OrderedApp
 
