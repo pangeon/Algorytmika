@@ -1,0 +1,9 @@
+1.Java – obiektowy język programowania stworzony przez grupę roboczą pod kierunkiem Jamesa Goslinga z firmy Sun Microsystems. 
+2.Java jest językiem tworzenia programów źródłowych kompilowanych do kodu bajtowego, czyli postaci wykonywanej przez maszynę wirtualną. 
+3.Język cechuje się silnym typowaniem. 
+4.Jego podstawowe koncepcje zostały przejęte z języka Smalltalk:
+a.a) maszyna wirtualna, 
+b.a) zarządzanie pamięcią 
+- także z języka C++ 
+b.a)duża część składni 
+b.b)znaczna ilośćsłów kluczowych. 

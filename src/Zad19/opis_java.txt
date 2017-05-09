@@ -1,0 +1,261 @@
+1.Java – o iektowy język programowania stworzony przez grupę roboczą pod kierunkiem Jamesa Goslinga z firmy Sun Microsystems.
+2.Java jest  ęzykiem tworzenia programów źródłowych kompilowanych do kodu bajtowego, czyli postaci wykonywanej przez maszynę wirtualną.
+3.Język cec uje się silnym typowaniem.
+4.Jego podst wowe koncepcje zostały przejęte z języka Smalltalk:
+a.a) maszyna wirtualna,
+b.a) zarząd anie pamięcią
+- także z j �zyka C++
+b.a)duża cz �ść składni
+b.b)znaczna  lośćsłów kluczowych.
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+

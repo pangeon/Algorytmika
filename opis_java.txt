@@ -1,0 +1,261 @@
+1.Java – obi ktowy jêzyk programowania stworzony przez grupê robocz¹ pod kierunkiem Jamesa Goslinga z firmy Sun Microsystems.
+2.Java jest  êzykiem tworzenia programów Ÿród³owych kompilowanych do kodu bajtowego, czyli postaci wykonywanej przez maszynê wirtualn¹.
+3.Jêzyk cech je siê silnym typowaniem.
+4.Jego podst wowe koncepcje zosta³y przejête z jêzyka Smalltalk:
+a.a) maszyna wirtualna,
+b.a) zarz¹dz nie pamiêci¹
+- tak¿e z jê yka C++
+b.a)du¿a czê æ sk³adni
+b.b)znaczna  loœæs³ów kluczowych.
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+x null
+
