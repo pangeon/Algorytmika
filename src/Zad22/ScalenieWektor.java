@@ -5,7 +5,7 @@ z zachowaniem uporządkowania.
 Wynik działania programu dla poniższych wektorów:
 powinien zatem wyglądać następująco: 
 13 25 56 57 58 67 69 70 76 89 95 0 0 0...
-Program powinien oczywiście działać  dla dowolnych długości wektorów 
+Program powinien oczywiście działać dla dowolnych długości wektorów 
 (pierwszy może być dłuższy od drugiego i odwrotnie, 
 mogą mieć też taką samą długość 
 – ale każdy jest wypełniony do końca liczbami) i kombinacji ich wartości. 
