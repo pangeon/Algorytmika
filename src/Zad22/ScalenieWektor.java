@@ -56,15 +56,53 @@ public class ScalenieWektor {
     }
     /* metoda sortująca wektor */
     static void sort_array(int[] tab) {
-        for (int i = 0; i < tab.length; i++) {        
-            if (tab[i] > tab[i+1]) {     
-                // tab[1] - 56 > tab[2] - 23
-                // tab[2-1] | tab[1+1]
-                int temp; // ten większy
-                temp = tab[i]; // zapisuje go
-                tab[i+1] = temp; // przenoszę do kolejnego indexu
-                tab[i] = tab[i+1]; // ten mniejszy przenoszę na dół         
+        /*
+        Sortowanie bąbelkowe:
+        ---------------------
+        Sterowanie przepływem:
+            1) Pętla kończy swoje wykonywanie gdy "warunek A" jest równy false
+            (w przeciwnym razie wykonuje się w nieskończoność).
+            2) Pętla wykonuje się conajmniej raz przed sprawdzeniem "warunku A".
+            3) "Blok D" zawiera informacje o zmianie stanu flagi na false
+            (pętla jednak nie kończy swego działania).
+            4) "Blok D" inicjuje wykonanie "bloku E".
+            5) "Blok F" jest zamknięty w "bloku E" będącym pętlą.
+            6)  Wykonanie "bloku F" warunkuje zmianę flagi na true;
+            7) Flaga będzie zmieniania dopóki spełniony będzie "warunek B",
+            występujący w "bloku E".
+            8) Brak spełniania "warunku B" warunkuje brakiem wykonania "bloku F",
+            w którym to następuje zmiana flagi na true.
+            9) Flaga false oznacza zamknięcie pętli.
+        Sortowanie:
+        ---------------------
+            1) Spełnienie "warunku B", koniecznego do wykonania "bloku F".
+            2) Przypisanie do zmiennej "temp" n-elementu z tablicy.
+            3) Przypisanie do n-elementu elementu go poprzedzającego
+            (o indexie mniejszym o 1)
+            4) Przypisanie do elementu o indexie mniejszym o 1 niż ten, na którym
+            operuje instrukcja 2 wartości zmiennej temp opisanej w instrukcji 1
+            5) Zamiana kolejności elementów z tablicy
+            6) Operacja wykonywana do uzyskania uporządkowania
+            (chodzi o kolejność rosnącą)
+        */
+        boolean flag = true;
+        int temp;
+        // blok D
+        do { 
+            flag = false;
+            // blok E
+            for (int i = 1; i < tab.length; i++) { 
+                // blok F    
+                if (tab[i] < tab[i-1]) { // warunek B 
+                    temp = tab[i]; // instr 1
+                    tab[i] = tab[i-1]; // instr 2
+                    tab[i-1] = temp; // intr 3
+                    flag = true;
+                }
             }
+        }    
+        while (flag); // warunek A
+        for (int i = 0; i < tab.length; i++) {
             System.out.println(" [ " + i + " ] " + tab[i]);
         }
     }
