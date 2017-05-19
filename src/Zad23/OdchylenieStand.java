@@ -19,9 +19,9 @@ public class OdchylenieStand {
         String column[] = new String[10];
         file = Utils.readFile("C:\\Users\\Kamil\\Documents\\NetBeansProjects\\Algorytmika\\src\\Zad23\\Inc.txt");
         Utils.splitColumn(file);
-        for (int i = 0; i < 10; i++) {
-            column[i] = file[i];
-            System.out.println(column[i]);
-        }
+//        for (int i = 0; i < 10; i++) {
+//            column[i] = file[i];
+//            System.out.println(column[i]);
+//        }
     }
 }

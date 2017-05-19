@@ -59,10 +59,26 @@ public class Utils {
     }
     static void splitColumn(String[] file) {
         String[] tokens = null;
-        for (String line : file) {        
-            tokens = line.split(" ");
-            System.out.println(tokens[tokens.length-1]);
+        String[] token = null;
+        for (String line : file) {
+            //file zostaje podzielone na line
+            //line to nie tablica
+            //do tablicy tokens zostaje przypisany podział line przez whitespace
+            tokens = line.split(" "); 
+//            System.out.println("Wykonanie metody line = " + line);
+//            System.out.println("Wykonanie metody tokens = " + tokens);
+//            for (int i = 0; i < file.length; i++) {
+//                System.out.println("Tablica file: " + file[i]);
+//            }
+//            for (int i = 0; i < tokens.length; i++) {
+//                System.out.println("Tablica tokens: " + tokens[i]);
+//            }
+            //token[1] = tokens[tokens.length-1]);
+            System.out.println(tokens[4]);
+            //System.out.println("1.Tablica tokens: " + tokens[1]);
         }
+//        System.out.println("2.File: " + file[1]);
+//        System.out.println("2.Tablica tokens: " + tokens[6]);
 
   
     }
