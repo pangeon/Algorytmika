@@ -29,7 +29,7 @@
     Throws:
     NoSuchElementException - if the iteration has no next element
 */
-package Zad24;
+package Horstmann.Zad24;
 
 import java.util.Iterator;
 import java.util.LinkedList;

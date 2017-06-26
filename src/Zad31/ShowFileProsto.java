@@ -1,6 +1,10 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+Proszę uruchomić następujący, zmodyfikowany program ShowFileProsto dla pliku dane.txt 
+z zadania maturalnego. Proszę ustawić w linii komend ścieżkę dostępu do pliku!
+Proszę zwrócić uwagę na znaki końca wiersza (10 13) oraz końca pliku (-1).
+Proszę rozbudować ten program w ten sposób, aby łączyć ciągi znaków w łańcuchy 
+i tworzyć z  nich liczby (albo przez konkatenację łańcuchów 
+albo przez metodę Append klasy String)
  */
 package Zad31;
 

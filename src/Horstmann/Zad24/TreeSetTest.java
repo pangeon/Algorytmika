@@ -2,7 +2,7 @@
  na podstawie 13.2.2. Listy tablicowe str. 684, kod 691 - Horstmann (część I wyd. polskie) 
     pomoc: https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
  */ 
-package Zad24;
+package Horstmann.Zad24;
 
 import java.util.Comparator;
 import java.util.SortedSet;
